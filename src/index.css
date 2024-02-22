@@ -47,24 +47,52 @@ body {
     margin-top: 20px;
 margin-left: 20px;
   }
+  body{
+    margin-right: 20px;
+  }
 }
 h1 {
   font-size: 2.5rem;
   font-weight: bold;
   text-align: center;
-  color: red; /* Text color red */
-  background-color: rgba(191, 137, 137, 0.1);
-  cursor: pointer; /* Add cursor pointer for hover effect */
-  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition for background color and text color */
-  padding: 10px 20px; /* Add padding for better readability and interaction */
-  border-radius: 6px; /* Rounded corners for a modern look */
+ 
+  background-color: #3b0303; 
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  padding: 10px 20px; 
+  border-radius: 6px; 
 }
+
 
 
 
 @media screen and (max-width: 768px) {
   h1 {
     font-size: 2rem; 
-    margin: 20px;/* Adjust size for smaller screens */
+    margin: 20px;
+  }
+}
+
+/* For screens smaller than 768px */
+@media screen and (max-width: 768px) {
+  .player {
+    width: 90%; 
+    margin-top: 20px; 
+    margin-left: 20px; 
+  }
+  body {
+    margin-right: 20px; 
+  }
+}
+
+/* Example of further customization for smaller screens */
+@media screen and (max-width: 576px) {
+  .player {
+    width: 95%; 
+    margin-top: 10px; 
+    margin-left: 10px; 
+  }
+  body {
+    margin-right: 10px; 
   }
 }
